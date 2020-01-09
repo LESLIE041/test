@@ -41,11 +41,11 @@
     border: unset;
 
     /deep/ .el-card__header {
-      border-bottom: unset !important;
+      border-bottom: unset ;
     }
 
     /deep/ .el-card__body {
-      border-bottom: unset !important;
+      border-bottom: unset ;
     }
   }
 
