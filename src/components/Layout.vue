@@ -33,8 +33,14 @@
                 </el-row>
 
                 <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item>个人信息</el-dropdown-item>
-                  <el-dropdown-item>退出</el-dropdown-item>
+                  <el-dropdown-item class="personal-information">
+                    <router-link
+                      :to="{name:'personalInformation'}"
+                    >
+                      个人信息
+                    </router-link>
+                  </el-dropdown-item>
+                  <el-dropdown-item :divided="true">退出</el-dropdown-item>
                 </el-dropdown-menu>
               </el-dropdown>
             </el-col>
@@ -153,4 +159,12 @@
   .height-100 {
     height: 100%;
   }
+
+  .personal-information {
+    a:link {
+      text-decoration: none;
+      color: unset;
+    }
+  }
+
 </style>
