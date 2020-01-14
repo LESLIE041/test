@@ -32,7 +32,7 @@
   .grid-content_bg-purple {
     margin-bottom: 40px;
     margin-left: 60px;
-    background-color: #C6E2FF;
+    /*background-color: #C6E2FF;*/
 
   }
 

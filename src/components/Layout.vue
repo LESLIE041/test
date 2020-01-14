@@ -1,11 +1,44 @@
 <template>
   <el-container class="body">
     <el-header>
-      <el-row type="flex" align="middle" justify="center" class="title">
-        <el-col :span="6">
+      <el-row type="flex" align="middle" justify="space-around" class="title">
+        <el-col :span="8">
+        </el-col>
+        <el-col :span="8">
           <div class="title-content">
             <span>疾病预测大数据平台</span>
           </div>
+        </el-col>
+        <el-col :span="8">
+          <el-row type="flex" align="middle" justify="end">
+            <el-col
+              :span="24"
+            >
+              <el-dropdown class="personal-menu">
+                <el-row
+                  type="flex"
+                  align="middle"
+                  justify="space-around"
+                  :gutter="8"
+                >
+                  <el-col :span="8">
+                    <span>user</span>
+                  </el-col>
+                  <el-col :span="8">
+                    <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"/>
+                  </el-col>
+                  <el-col :span="8">
+                    <i class="el-icon-arrow-down el-icon--right"/>
+                  </el-col>
+                </el-row>
+
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item>个人信息</el-dropdown-item>
+                  <el-dropdown-item>退出</el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
+            </el-col>
+          </el-row>
         </el-col>
       </el-row>
     </el-header>
@@ -83,16 +116,28 @@
     .el-header {
       background-color: #ffffff;
       box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+      padding: 0;
 
       .title {
         height: 100%;
-      }
 
-      .title-content {
-        text-align: center;
-        font-size: 24px;
-        letter-spacing: 0.2em;
-        font-family: "Helvetica Neue", sans-serif;
+        .title-content {
+          text-align: center;
+          font-size: 24px;
+          letter-spacing: 0.2em;
+          font-family: "Helvetica Neue", sans-serif;
+        }
+
+        .personal-menu {
+          float: right;
+          margin-right: 10px;
+          height: 100%;
+
+          .user-info {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
       }
 
     }
@@ -105,4 +150,7 @@
     }
   }
 
+  .height-100 {
+    height: 100%;
+  }
 </style>

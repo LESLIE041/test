@@ -16,7 +16,7 @@
     </div>
     </el-col>
   <el-col :span="10"><div class="grid-content bg-purple">
- <el-date-picker v-model="selectMonth" type="month" placeholder="选择月"   @change="jobSearch" value-format="yyyy-MM"></el-date-picker>
+    <el-date-picker v-model="selectMonth" type="month" placeholder="选择月" @change="jobSearch" value-format="yyyy-MM"/>
     </div>
     </el-col>
 </el-row>
